@@ -146,13 +146,16 @@
         <h2><span class="n">06</span>Bildirimler ve widget</h2>
         <p>Hatırlatıcıları açarsan su ve günlük hatırlatmaları <strong>cihazında yerel olarak</strong> planlanır. Bildirim sunucusu kullanılmaz ve bildirim içeriği hiçbir yere gönderilmez. Profil › Bildirimler'den veya iOS Ayarları'ndan kapatabilirsin.</p>
         <p>Su widget'ı, günün su sayısını göstermek için yalnızca bu sayıyı ve hedefini cihazındaki uygulama ile widget arasında paylaşılan alana yazar.</p>
+        <h3>Çökme ve donma raporları</h3>
+        <p>Uygulama çökerse veya donarsa iOS, Apple'ın MetricKit'i aracılığıyla teknik bir rapor bırakabilir (çağrı yığınları, uygulama sürümü, cihaz modeli, işletim sistemi sürümü). Mesura bu raporların en yenilerini <strong>cihazındaki kendi alanında</strong> tutar. Kendiliğinden hiçbir yere gönderilmez. Profil › Gizlilik bölümünde raporu destek e-postasına eklemen için bir paylaş düğmesi, silmen için de ayrı bir düğme vardır. Raporda öğün, kilo, ad veya sağlık bilgin bulunmaz.</p>
+        <p>Bundan bağımsız olarak, iOS Ayarları'nda geliştiricilerle analiz paylaşımını açtıysan Apple, App Store ve TestFlight uygulamalarının çökme raporlarını kendi hizmeti üzerinden geliştiriciye iletebilir.</p>
       </section>
 
       <section id="tr-yapmadiklarimiz">
         <h2><span class="n">07</span>Yapmadıklarımız</h2>
         <ul>
           <li>Reklam göstermeyiz, reklam ağı kullanmayız.</li>
-          <li>Üçüncü taraf analiz veya çökme raporlama aracı kullanmayız.</li>
+          <li>Üçüncü taraf analiz veya çökme raporlama aracı kullanmayız. Apple'ın MetricKit'inden gelen çökme raporları, sen paylaşmadıkça cihazında kalır (bölüm 06).</li>
           <li>Seni uygulamalar ve web siteleri arasında izlemeyiz; veri aracılarıyla veri paylaşmayız.</li>
           <li>Kişisel verilerini satmayız.</li>
           <li>Hesap olmadığı için kaybolabilecek bir parola veya kimlik bilgisi tutmayız.</li>
@@ -306,13 +309,16 @@
         <h2><span class="n">06</span>Notifications and widget</h2>
         <p>If you enable reminders, water and diary reminders are scheduled <strong>locally on your device</strong>. No push server is involved and no notification content is sent anywhere. Turn them off in Profile › Notifications or in iOS Settings.</p>
         <p>The water widget writes only today's glass count and goal to a space shared between the app and the widget on your device.</p>
+        <h3>Crash and freeze reports</h3>
+        <p>If the app crashes or freezes, iOS may leave a technical report through Apple's MetricKit (call stacks, app version, device model, OS version). Mesura keeps the most recent ones <strong>in its own storage on your device</strong>. They are never sent anywhere on their own. Profile › Privacy has a share button so you can attach a report to a support email, and a button to delete it. A report holds no meal, weight, name or Health data.</p>
+        <p>Separately, if you turned on sharing analytics with developers in iOS Settings, Apple may send crash reports from App Store and TestFlight apps to the developer through its own service.</p>
       </section>
 
       <section id="en-dont">
         <h2><span class="n">07</span>What we don't do</h2>
         <ul>
           <li>No advertising and no ad networks.</li>
-          <li>No third-party analytics or crash-reporting tools.</li>
+          <li>No third-party analytics or crash-reporting tools. Crash reports from Apple's own MetricKit stay on your device unless you share them (section 06).</li>
           <li>No tracking across apps or websites, and no sharing with data brokers.</li>
           <li>No selling of personal information.</li>
           <li>No accounts, so no password or credentials to lose.</li>
