@@ -4,29 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mesura</title>
-<meta name="title-tr" content="Mesura — Ölçülü beslenme günlüğü">
-<meta name="title-en" content="Mesura — A measured food diary">
-<meta name="description" content="Mesura; kalori, makro, su ve kilo takibini tek sade günlükte toplar. Verilerin telefonunda kalır. / Mesura keeps calories, macros, water and weight in one calm diary. Your data stays on your iPhone.">
-<meta name="theme-color" content="#f8f8f3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111612" media="(prefers-color-scheme: dark)">
+<meta name="title-tr" content="Mesura · Kalori günlüğü">
+<meta name="title-en" content="Mesura · Calorie diary">
+<meta name="description" content="Mesura, iPhone için kalori ve makro günlüğü. Hesap yok, reklam yok; kayıtların telefonunda kalır. / A calorie and macro diary for iPhone. No account, no ads; your logs stay on your phone.">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:title" content="Mesura">
-<meta property="og:description" content="Kalori, makro, su ve kilo — tek sade günlükte. Verilerin telefonunda kalır.">
+<meta property="og:description" content="Kalorini sayar. Seni izlemez.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
+<a class="skip" href="#main"><span lang="tr">İçeriğe geç</span><span lang="en">Skip to content</span></a>
 
-<header class="bar">
-  <div class="wrap">
-    <a class="mark" href="./" aria-label="Mesura">mesura<i aria-hidden="true"></i></a>
-    <nav class="nav" aria-label="Site">
-      <a class="nav-optional" href="#olcum"><span lang="tr">Neler var</span><span lang="en">Features</span></a>
-      <a class="nav-optional" href="#pro">Pro</a>
+<div class="page">
+  <header class="masthead">
+    <a class="wordmark" href="./">mesura</a>
+    <nav aria-label="Site">
+      <a href="#pro">Pro</a>
       <a href="#destek"><span lang="tr">Destek</span><span lang="en">Support</span></a>
       <a href="privacy.html"><span lang="tr">Gizlilik</span><span lang="en">Privacy</span></a>
       <div class="lang" role="group" aria-label="Dil / Language">
@@ -34,216 +33,177 @@
         <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
       </div>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main>
-  <section class="hero">
-    <div class="wrap hero-grid">
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
       <div>
-        <p class="label rise" lang="tr">iPhone için beslenme günlüğü</p>
-        <p class="label rise" lang="en">A food diary for iPhone</p>
-        <h1 class="rise d1" lang="tr">Gününü <em>ölç</em>,<br>fazlasını değil.</h1>
-        <h1 class="rise d1" lang="en">Measure <em>the day</em>,<br>not yourself.</h1>
-        <p class="lede rise d2" lang="tr">Mesura; kalori, makro, su ve kilonu tek sade günlükte toplar. Hedefin vücuduna göre hesaplanır, verilerin telefonunda kalır.</p>
-        <p class="lede rise d2" lang="en">Mesura keeps calories, macros, water and weight in one calm diary. Your target is calculated for your body, and your data stays on your iPhone.</p>
-        <div class="hero-cta rise d3">
-          <span class="btn btn-primary" role="note">
-            <svg width="16" height="18" viewBox="0 0 16 18" aria-hidden="true"><path fill="currentColor" d="M13.3 9.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8-.7 0-1.8-.8-3-.8C3.8 4.3 2.3 5.2 1.5 6.7c-1.7 2.9-.4 7.2 1.2 9.6.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.4-1-2.4-4.1zM11 2.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.7-1.3z"/></svg>
-            <span lang="tr">App Store</span><span lang="en">App Store</span>
-            <span class="soon" lang="tr">yakında</span><span class="soon" lang="en">coming soon</span>
+        <p class="kicker"><span lang="tr">iPhone için kalori günlüğü</span><span lang="en">A calorie diary for iPhone</span></p>
+        <h1 id="hero-title"><span lang="tr">Kalorini sayar. Seni <mark>izlemez.</mark></span><span lang="en">Counts calories. Never <mark>counts you.</mark></span></h1>
+        <p class="lede" lang="tr">Mesura öğünlerini, suyunu ve kilonu tek bir günlükte tutar. Hesap açmazsın. Kayıtların iPhone'undan çıkmaz.</p>
+        <p class="lede" lang="en">Mesura keeps your meals, water and weight in one diary. You don't make an account. Your logs never leave your iPhone.</p>
+        <div class="store">
+          <span class="store-badge">
+            <svg width="22" height="26" viewBox="0 0 16 19" aria-hidden="true"><path fill="currentColor" d="M13.3 10.1c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8-.7 0-1.8-.8-3-.8C3.8 4.8 2.3 5.7 1.5 7.2c-1.7 2.9-.4 7.2 1.2 9.6.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.4-1-2.4-4.1zM11 3.3c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2-.5 2.7-1.3z"/></svg>
+            <span><small lang="tr">Yakında</small><small lang="en">Coming soon</small><b>App Store</b></span>
           </span>
-          <a class="btn btn-ghost" href="privacy.html"><span lang="tr">Verilerin nerede durur?</span><span lang="en">Where does your data live?</span> <span aria-hidden="true">→</span></a>
+          <p lang="tr">Yayına girdiğinde indirme bağlantısı bu sayfada olacak.</p>
+          <p lang="en">The download link goes here on release day.</p>
         </div>
       </div>
 
-      <aside class="readout rise d2" aria-label="Örnek gün / Example day">
-        <div class="readout-head">
-          <span class="label"><span lang="tr">Bugün kalan</span><span lang="en">Left today</span></span>
-          <span class="label"><span lang="tr">Örnek gün</span><span lang="en">Example day</span></span>
+      <!-- The product's own label. Every value is true for this release. -->
+      <aside class="label-card" aria-label="Mesura Değerleri / Mesura Facts">
+        <h2 lang="tr">Mesura Değerleri</h2>
+        <h2 lang="en">Mesura Facts</h2>
+        <div class="serving"><span lang="tr">Porsiyon</span><span lang="en">Serving size</span><span lang="tr">1 gün</span><span lang="en">1 day</span></div>
+        <div class="bar-thick" aria-hidden="true"></div>
+        <div class="headline-row">
+          <span lang="tr">Sunucuya giden<br>kayıt verisi</span><span lang="en">Log data sent<br>to a server</span>
+          <b class="num">0 g</b>
         </div>
-        <div class="readout-num"><span data-readout="814">814</span><small>kcal</small></div>
-        <div class="meter" role="img" aria-label="1.326 / 2.140 kcal"><span style="--fill:62%"></span></div>
-        <div class="macros">
-          <div class="macro p"><span class="label">Protein</span><b>96 / 140 g</b><i></i></div>
-          <div class="macro c"><span class="label"><span lang="tr">Karb.</span><span lang="en">Carbs</span></span><b>148 / 230 g</b><i></i></div>
-          <div class="macro f"><span class="label"><span lang="tr">Yağ</span><span lang="en">Fat</span></span><b>41 / 71 g</b><i></i></div>
-        </div>
-        <div class="readout-foot">
-          <span lang="tr">Hedef 2.140 kcal</span><span lang="en">Target 2,140 kcal</span>
-          <span lang="tr">Su 5 / 8 bardak</span><span lang="en">Water 5 / 8 glasses</span>
-        </div>
+        <div class="bar-mid" aria-hidden="true"></div>
+        <table>
+          <caption><span lang="tr">% Günlük Değer*</span><span lang="en">% Daily Value*</span></caption>
+          <tbody>
+            <tr><th scope="row"><b lang="tr">Hesap</b><b lang="en">Accounts</b> 0</th><td class="num"><span class="zero" lang="tr">%0</span><span class="zero" lang="en">0%</span></td></tr>
+            <tr><th scope="row"><b lang="tr">Reklam</b><b lang="en">Ads</b> 0</th><td class="num"><span class="zero" lang="tr">%0</span><span class="zero" lang="en">0%</span></td></tr>
+            <tr><th scope="row"><b lang="tr">İzleyici (tracker)</b><b lang="en">Trackers</b> 0</th><td class="num"><span class="zero" lang="tr">%0</span><span class="zero" lang="en">0%</span></td></tr>
+            <tr><th scope="row"><b>Apple Health</b></th><td><span lang="tr">İsteğe bağlı</span><span lang="en">Optional</span></td></tr>
+            <tr class="sub"><th scope="row"><span lang="tr">Okuma: adım, enerji, antrenman</span><span lang="en">Read: steps, energy, workouts</span></th><td><span lang="tr">Cihazda</span><span lang="en">On device</span></td></tr>
+            <tr class="sub last"><th scope="row"><span lang="tr">Yazma: yalnızca kilo</span><span lang="en">Write: weight only</span></th><td><span lang="tr">Onayınla</span><span lang="en">If you allow</span></td></tr>
+          </tbody>
+        </table>
+        <div class="bar-thick" aria-hidden="true"></div>
+        <p class="ingredients" lang="tr"><b>İÇİNDEKİLER:</b> kişisel kalori ve makro hedefi, öğün kaydı, su takibi, kilo eğilimi, Apple Health bağlantısı (isteğe bağlı), cihazda planlanan hatırlatıcılar.</p>
+        <p class="ingredients" lang="en"><b>INGREDIENTS:</b> personal calorie and macro target, meal log, water tracking, weight trend, Apple Health link (optional), reminders scheduled on the device.</p>
+        <p class="foot" lang="tr">* Günlük Değer, kaydettiklerinin ne kadarının telefonundan çıktığını gösterir. Pro ödemesini Apple işler; kart bilgin bize gelmez.</p>
+        <p class="foot" lang="en">* Daily Value shows how much of what you log leaves your phone. Apple processes Pro payments; your card details never reach us.</p>
       </aside>
-    </div>
-  </section>
+    </section>
 
-  <div class="ruler" aria-hidden="true">
-    <div class="ruler-track">
-      <div class="ruler-nums"><span>40</span><span>41</span><span>42</span><span>43</span><span>44</span><span>45</span><span>46</span><span>47</span><span>48</span><span>49</span><span>50</span><span>51</span><span>52</span><span>53</span><span>54</span><span>55</span><span>56</span><span>57</span><span>58</span><span>59</span><span>60</span><span>61</span><span>62</span><span>63</span><span>64</span><span>65</span><span>66</span><span>67</span><span>68</span><span>69</span><span>70</span><span>71</span><span>72</span><span>73</span><span>74</span><span>75</span><span>76</span><span>77</span><span>78</span><span>79</span><span>80</span><span>81</span><span>82</span><span>83</span><span>84</span><span>85</span><span>86</span><span>87</span><span>88</span><span>89</span><span>90</span><span>91</span><span>92</span><span>93</span><span>94</span><span>95</span><span>96</span><span>97</span><span>98</span><span>99</span></div>
-    </div>
-    <div class="ruler-needle"></div>
-  </div>
-
-  <section class="section" id="olcum">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 lang="tr">Tek bir günde ne ölçülürse.</h2>
-        <h2 lang="en">Everything a day can measure.</h2>
-        <p lang="tr">Mesura seni bir sayıya indirgemez. Hedefini yaş, boy, kilo ve hareketine göre kurar; sonra her öğünü, bardağı ve tartıyı aynı sade çizgide gösterir.</p>
-        <p lang="en">Mesura never reduces you to a number. It builds your target from your age, height, weight and activity, then shows every meal, glass and weigh-in on one calm line.</p>
+    <section class="band" aria-labelledby="what-title">
+      <div class="band-inner">
+        <h2 class="band-title" id="what-title"><span lang="tr">Ne ölçer</span><span lang="en">What it measures</span>
+          <small lang="tr">Her satırda kontrol edebileceğin bir sayı var.</small><small lang="en">Every row has a number you can check.</small></h2>
+        <dl class="facts">
+          <div>
+            <dt class="num"><span lang="tr">1.200</span><span lang="en">1,200</span><small lang="tr">kcal alt sınır</small><small lang="en">kcal floor</small></dt>
+            <dd>
+              <h3 lang="tr">Hedefin vücuduna göre kurulur</h3>
+              <h3 lang="en">Your target is built for your body</h3>
+              <p lang="tr">Yaşın, boyun, kilon ve hareket düzeyinden Mifflin-St Jeor formülüyle hesaplanır. Seçtiğin haftalık tempo kadar açık ya da fazla eklenir. Hedef kadınlarda 1.200, erkeklerde 1.500&nbsp;kcal'nin altına hiç inmez.</p>
+              <p lang="en">Calculated from your age, height, weight and activity with the Mifflin-St Jeor formula, then adjusted by the weekly pace you choose. It never drops below 1,200&nbsp;kcal for women or 1,500&nbsp;kcal for men.</p>
+            </dd>
+          </div>
+          <div>
+            <dt class="num">3<small lang="tr">makro, ayrı ayrı</small><small lang="en">macros, separately</small></dt>
+            <dd>
+              <h3 lang="tr">Protein, karbonhidrat ve yağ</h3>
+              <h3 lang="en">Protein, carbs and fat</h3>
+              <p lang="tr">Her kayıt gramıyla tutulur. Porsiyonu değiştirirsen değerler aynı oranda ölçeklenir.</p>
+              <p lang="en">Every entry keeps its grams. Change the portion and the values scale with it.</p>
+            </dd>
+          </div>
+          <div>
+            <dt class="num">1<small lang="tr">dokunuş</small><small lang="en">tap</small></dt>
+            <dd>
+              <h3 lang="tr">Su, ana ekrandan</h3>
+              <h3 lang="en">Water from the Home Screen</h3>
+              <p lang="tr">Ana ekrandaki widget'a dokun, bir bardak eklensin.</p>
+              <p lang="en">Tap the Home Screen widget and a glass is added.</p>
+            </dd>
+          </div>
+          <div>
+            <dt class="num">14<small lang="tr">günlük pencere</small><small lang="en">day window</small></dt>
+            <dd>
+              <h3 lang="tr">Tartının gürültüsü değil, eğilimin</h3>
+              <h3 lang="en">The trend, not the scale's noise</h3>
+              <p lang="tr">Kilo grafiği günlük dalgalanmayı değil yönü gösterir. Son 14 günde yeterince kayıt ve tartı biriktiğinde Mesura gerçek harcamanı tahmin eder ve hedefini buna göre güncellemeyi önerir. Karar senin.</p>
+              <p lang="en">The weight chart shows direction, not daily swings. Once the last 14 days hold enough logs and weigh-ins, Mesura estimates what you actually burn and offers to update your target. You decide.</p>
+            </dd>
+          </div>
+        </dl>
       </div>
+    </section>
 
-      <div class="gauges">
-        <article class="gauge">
-          <span class="unit">kcal</span>
-          <h3 lang="tr">Kişisel kalori hedefi</h3><h3 lang="en">A calorie target for you</h3>
-          <p lang="tr">Mifflin-St Jeor formülü ve seçtiğin haftalık tempo ile hesaplanır. Güvenli bir alt sınırın altına hiç inmez.</p>
-          <p lang="en">Calculated with the Mifflin-St Jeor formula and the weekly pace you pick — and never below a safe floor.</p>
-        </article>
-        <article class="gauge">
-          <span class="unit">g</span>
-          <h3 lang="tr">Makrolar ve porsiyon</h3><h3 lang="en">Macros and portions</h3>
-          <p lang="tr">Protein, karbonhidrat ve yağ her öğünde görünür. Gramı değiştir, değerler anında ölçeklensin.</p>
-          <p lang="en">Protein, carbs and fat on every entry. Change the grams and the values scale instantly.</p>
-        </article>
-        <article class="gauge">
-          <span class="unit" lang="tr">bardak</span><span class="unit" lang="en">glass</span>
-          <h3 lang="tr">Su, widget'tan tek dokunuş</h3><h3 lang="en">Water, one tap from a widget</h3>
-          <p lang="tr">Günlük su hedefini ana ekrandaki widget'tan ya da Kontrol Merkezi'nden işaretle.</p>
-          <p lang="en">Tick off today's water from the Home Screen widget or Control Centre.</p>
-        </article>
-        <article class="gauge">
-          <span class="unit">kg</span>
-          <h3 lang="tr">Kilo eğilimi</h3><h3 lang="en">Weight trend</h3>
-          <p lang="tr">Günlük dalgalanmayı değil, eğilimi gösterir. İstersen Apple Health adım ve aktif enerjini de hesaba katar.</p>
-          <p lang="en">Shows the trend, not the daily noise. Optionally counts your Apple Health steps and active energy.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:0">
-    <div class="wrap">
-      <div class="vault">
+    <section class="band" id="pro" aria-labelledby="pro-title">
+      <div class="band-inner">
+        <h2 class="band-title" id="pro-title">Pro
+          <small lang="tr">Günlük kayıt her zaman ücretsiz.</small><small lang="en">Daily logging is always free.</small></h2>
         <div>
-          <p class="label" lang="tr">Gizlilik</p><p class="label" lang="en">Privacy</p>
-          <h2 lang="tr">Hesap yok.<br><span>Sunucu yok.</span><br>Sadece telefonun.</h2>
-          <h2 lang="en">No account.<br><span>No server.</span><br>Just your phone.</h2>
-          <p lang="tr">Öğünlerin, kilon ve hedeflerin yalnızca iPhone'unda saklanır. Biz göremeyiz, satamayız, kaybedemeyiz. Yedeği istediğin yere sen alırsın.</p>
-          <p lang="en">Your meals, weight and goals are stored only on your iPhone. We can't see them, sell them or lose them. You take the backup wherever you like.</p>
-          <a class="more" href="privacy.html"><span lang="tr">Gizlilik politikasını oku</span><span lang="en">Read the privacy policy</span> <span aria-hidden="true">→</span></a>
+          <div class="compare-wrap">
+            <table class="compare">
+              <thead>
+                <tr><th scope="col"><span class="sr" lang="tr">Özellik</span><span class="sr" lang="en">Feature</span></th><th scope="col"><span lang="tr">Ücretsiz</span><span lang="en">Free</span></th><th scope="col" class="pro-col">Pro</th></tr>
+              </thead>
+              <tbody lang="tr">
+                <tr><th scope="row">Kişisel kalori ve makro hedefi</th><td>Var</td><td class="pro-col">Var</td></tr>
+                <tr><th scope="row">Öğün, su ve kilo kaydı</th><td>Var</td><td class="pro-col">Var</td></tr>
+                <tr><th scope="row">Kayıt geçmişi</th><td class="num">Son 7 gün</td><td class="pro-col">Sınırsız</td></tr>
+                <tr><th scope="row">Haftalık ve aylık analiz</th><td class="no">Yok</td><td class="pro-col">Var</td></tr>
+                <tr><th scope="row">Beslenme planı ve alışveriş listesi</th><td class="no">Yok</td><td class="pro-col">Var</td></tr>
+              </tbody>
+              <tbody lang="en">
+                <tr><th scope="row">Personal calorie and macro target</th><td>Yes</td><td class="pro-col">Yes</td></tr>
+                <tr><th scope="row">Meal, water and weight logging</th><td>Yes</td><td class="pro-col">Yes</td></tr>
+                <tr><th scope="row">History</th><td class="num">Last 7 days</td><td class="pro-col">Unlimited</td></tr>
+                <tr><th scope="row">Weekly and monthly analysis</th><td class="no">No</td><td class="pro-col">Yes</td></tr>
+                <tr><th scope="row">Meal plans and grocery list</th><td class="no">No</td><td class="pro-col">Yes</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="fine" lang="tr">Pro haftalık veya yıllık, otomatik yenilenen bir aboneliktir ve Apple hesabından ücretlendirilir. Dönem bitmeden en az 24 saat önce Ayarlar › Apple Hesabı › Abonelikler'den iptal etmezsen yenilenir. Güncel fiyatı uygulamadaki abonelik ekranında görürsün.</p>
+          <p class="fine" lang="en">Pro is a weekly or yearly auto-renewing subscription charged to your Apple Account. It renews unless you cancel at least 24 hours before the period ends in Settings › Apple Account › Subscriptions. The current price is shown on the subscription screen in the app.</p>
         </div>
-        <ul class="ledger">
-          <li><span lang="tr">Öğün, su ve kilo kayıtları</span><span lang="en">Meal, water and weight logs</span><b class="on" lang="tr">Cihazda</b><b class="on" lang="en">On device</b></li>
-          <li><span lang="tr">Apple Health verisi</span><span lang="en">Apple Health data</span><b class="on" lang="tr">Yalnızca okunur</b><b class="on" lang="en">Read only</b></li>
-          <li><span lang="tr">Kullanıcı hesabı</span><span lang="en">User account</span><b class="off" lang="tr">Yok</b><b class="off" lang="en">None</b></li>
-          <li><span lang="tr">Reklam ve izleme</span><span lang="en">Ads and tracking</span><b class="off" lang="tr">Yok</b><b class="off" lang="en">None</b></li>
-          <li><span lang="tr">Ödeme bilgisi</span><span lang="en">Payment details</span><b class="off" lang="tr">Apple'da</b><b class="off" lang="en">With Apple</b></li>
-        </ul>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="pro" style="padding-top:0">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 lang="tr">Ücretsiz başla. Uzun vadeyi Pro'da gör.</h2>
-        <h2 lang="en">Start free. See the long run with Pro.</h2>
-        <p lang="tr">Günlük kayıt her zaman ücretsiz. Pro, haftalar ve aylar boyunca ritmini görmek isteyenler için.</p>
-        <p lang="en">Daily logging is always free. Pro is for seeing your rhythm across weeks and months.</p>
+    <section class="band" id="destek" aria-labelledby="support-title">
+      <div class="band-inner">
+        <h2 class="band-title" id="support-title"><span lang="tr">Destek</span><span lang="en">Support</span></h2>
+        <div class="support">
+          <div class="contact">
+            <a class="mail" href="mailto:yakup7313@icloud.com?subject=Mesura">yakup7313<wbr>@icloud.com</a>
+            <p lang="tr">Genellikle 2 iş günü içinde yanıt veririz. iOS sürümünü ve bir ekran görüntüsünü eklersen sorunu daha hızlı buluruz.</p>
+            <p lang="en">We usually reply within 2 business days. Add your iOS version and a screenshot and we'll find the problem faster.</p>
+          </div>
+          <div class="qa">
+            <details>
+              <summary><span lang="tr">Aboneliğimi nasıl iptal ederim?</span><span lang="en">How do I cancel my subscription?</span></summary>
+              <div class="answer" lang="tr"><p>Ayarlar › [adın] › Abonelikler › Mesura Pro. Ya da uygulamada Profil ekranındaki Mesura Pro kartına dokun. İptal, içinde bulunduğun dönemin sonunda geçerli olur ve o güne kadar Pro açık kalır.</p></div>
+              <div class="answer" lang="en"><p>Settings › [your name] › Subscriptions › Mesura Pro. Or tap the Mesura Pro card on the Profile screen in the app. Cancelling takes effect at the end of the current period, and Pro stays on until then.</p></div>
+            </details>
+            <details>
+              <summary><span lang="tr">Yeni telefonda Pro görünmüyor.</span><span lang="en">Pro is missing on my new phone.</span></summary>
+              <div class="answer" lang="tr"><p>Aboneliği aldığın Apple hesabıyla giriş yap ve abonelik ekranında <strong>Geri yükle</strong>'ye dokun. Abonelik cihaza değil, Apple hesabına bağlıdır.</p></div>
+              <div class="answer" lang="en"><p>Sign in with the Apple Account you subscribed with and tap <strong>Restore</strong> on the subscription screen. The subscription belongs to your Apple Account, not the device.</p></div>
+            </details>
+            <details>
+              <summary><span lang="tr">Kayıtlarımı yeni telefona nasıl taşırım?</span><span lang="en">How do I move my logs to a new phone?</span></summary>
+              <div class="answer" lang="tr"><p>Hesap ve sunucu olmadığı için iki yol var. iPhone'unun iCloud ya da bilgisayar yedeği uygulama verisini de taşır. Ya da Profil › Verilerimi dışa aktar ile bir dosya al, yeni telefonda Profil › Yedekten geri yükle ile aç.</p><p><strong>Uygulamayı yedeksiz silersen kayıtların da silinir.</strong></p></div>
+              <div class="answer" lang="en"><p>There's no account or server, so there are two ways. Your iPhone's iCloud or computer backup carries app data. Or save a file with Profile › Export my data and open it on the new phone with Profile › Restore from backup.</p><p><strong>Deleting the app without a backup deletes your logs.</strong></p></div>
+            </details>
+            <details>
+              <summary><span lang="tr">Tüm verilerimi nasıl silerim?</span><span lang="en">How do I delete all my data?</span></summary>
+              <div class="answer" lang="tr"><p>Profil › Verileri sil ve yeniden başla. Uygulamayı silmek de aynı sonucu verir. Bizde bir kopyası olmadığı için ayrıca talep göndermen gerekmez.</p></div>
+              <div class="answer" lang="en"><p>Profile › Delete data and start over. Deleting the app does the same. We hold no copy, so there's nothing else to request.</p></div>
+            </details>
+          </div>
+        </div>
       </div>
-      <div class="pro">
-        <article class="plan">
-          <h3 lang="tr">Ücretsiz</h3><h3 lang="en">Free</h3>
-          <ul lang="tr">
-            <li>Kişisel kalori ve makro hedefi</li>
-            <li>Öğün, su ve kilo kaydı</li>
-            <li>Son 7 günün geçmişi</li>
-            <li>Su widget'ı ve Apple Health bağlantısı</li>
-          </ul>
-          <ul lang="en">
-            <li>Personal calorie and macro target</li>
-            <li>Meal, water and weight logging</li>
-            <li>The last 7 days of history</li>
-            <li>Water widget and Apple Health link</li>
-          </ul>
-        </article>
-        <article class="plan is-pro">
-          <h3>Mesura Pro <span class="tag" lang="tr">abonelik</span><span class="tag" lang="en">subscription</span></h3>
-          <ul lang="tr">
-            <li>Sınırsız kayıt geçmişi</li>
-            <li>Haftalık ve aylık analiz, kalori ve protein ortalamaları</li>
-            <li>Beslenme planları ve otomatik alışveriş listesi</li>
-            <li>Hedeflerine göre koç önerileri</li>
-          </ul>
-          <ul lang="en">
-            <li>Unlimited history</li>
-            <li>Weekly and monthly analysis, calorie and protein averages</li>
-            <li>Meal plans and an automatic grocery list</li>
-            <li>Coach suggestions based on your goals</li>
-          </ul>
-          <p class="fine" lang="tr">Haftalık veya yıllık, otomatik yenilenen abonelik. Ödeme Apple hesabından alınır; dönem bitiminden en az 24 saat önce Ayarlar › Apple Hesabı › Abonelikler'den iptal edilmezse yenilenir.</p>
-          <p class="fine" lang="en">Weekly or yearly auto-renewing subscription, charged to your Apple Account. It renews unless cancelled at least 24 hours before the period ends in Settings › Apple Account › Subscriptions.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
+</div>
 
-  <section class="section" id="destek" style="padding-top:0">
-    <div class="wrap support">
-      <aside class="contact">
-        <p class="label" lang="tr">Destek</p><p class="label" lang="en">Support</p>
-        <h3 lang="tr">Bir şey ters mi gitti?</h3><h3 lang="en">Something not right?</h3>
-        <a class="mail" href="mailto:yakup7313@icloud.com?subject=Mesura%20destek">yakup7313@icloud.com</a>
-        <p lang="tr">Genellikle 2 iş günü içinde yanıt veririz. iOS sürümünü ve sorunun ekran görüntüsünü eklersen daha hızlı çözeriz.</p>
-        <p lang="en">We usually reply within 2 business days. Include your iOS version and a screenshot and we'll get there faster.</p>
-      </aside>
-
-      <div class="faq">
-        <details>
-          <summary><span lang="tr">Aboneliğimi nasıl iptal ederim?</span><span lang="en">How do I cancel my subscription?</span></summary>
-          <div class="answer" lang="tr"><p>iPhone'da Ayarlar › [adın] › Abonelikler › Mesura Pro yolunu izle ya da uygulamada Profil › Mesura Pro kartına dokun. İptal, mevcut dönemin sonunda geçerli olur; o güne kadar Pro açık kalır.</p></div>
-          <div class="answer" lang="en"><p>On iPhone go to Settings › [your name] › Subscriptions › Mesura Pro, or tap the Mesura Pro card in Profile. Cancelling takes effect at the end of the current period; Pro stays on until then.</p></div>
-        </details>
-        <details>
-          <summary><span lang="tr">Yeni telefona geçtim, Pro görünmüyor.</span><span lang="en">I switched phones and Pro is missing.</span></summary>
-          <div class="answer" lang="tr"><p>Aboneliği satın aldığın Apple hesabıyla giriş yap, sonra abonelik ekranında <strong>Geri yükle</strong>'ye dokun. Abonelik Apple hesabına bağlıdır, cihaza değil.</p></div>
-          <div class="answer" lang="en"><p>Sign in with the Apple Account you subscribed with, then tap <strong>Restore</strong> on the subscription screen. Subscriptions belong to your Apple Account, not the device.</p></div>
-        </details>
-        <details>
-          <summary><span lang="tr">Verilerimi yeni telefona nasıl taşırım?</span><span lang="en">How do I move my data to a new phone?</span></summary>
-          <div class="answer" lang="tr"><p>Mesura'nın hesabı ya da sunucusu olmadığı için verilerin iki yolla taşınır: iPhone'unun iCloud veya bilgisayar yedeği, ya da Profil › Verilerimi dışa aktar ile alacağın dosya. Yeni telefonda Profil › Yedekten geri yükle ile aç.</p><p><strong>Uygulamayı yedek almadan silersen kayıtların da silinir.</strong></p></div>
-          <div class="answer" lang="en"><p>Because Mesura has no account or server, your data moves in one of two ways: your iPhone's iCloud or computer backup, or the file you save with Profile › Export my data. Open it on the new phone with Profile › Restore from backup.</p><p><strong>Deleting the app without a backup deletes your logs too.</strong></p></div>
-        </details>
-        <details>
-          <summary><span lang="tr">Tüm verilerimi nasıl silerim?</span><span lang="en">How do I delete all my data?</span></summary>
-          <div class="answer" lang="tr"><p>Profil › Verileri sil ve yeniden başla, cihazdaki her şeyi siler ve kurulumu yeniden başlatır. Uygulamayı silmek de aynı sonucu verir. Bizde bir kopyası olmadığı için ayrıca talep göndermen gerekmez.</p></div>
-          <div class="answer" lang="en"><p>Profile › Delete data and start over removes everything on the device and restarts setup. Deleting the app does the same. We hold no copy, so there's nothing else to request.</p></div>
-        </details>
-        <details>
-          <summary><span lang="tr">Kalori hedefim nasıl hesaplanıyor?</span><span lang="en">How is my calorie target calculated?</span></summary>
-          <div class="answer" lang="tr"><p>Bazal metabolizma Mifflin-St Jeor formülüyle, günlük harcama aktivite seviyenle hesaplanır; seçtiğin haftalık tempo kadar açık ya da fazla eklenir. Hedef güvenli bir alt sınırın altına inmez. Bu değerler tahmindir ve tıbbi tavsiye değildir.</p></div>
-          <div class="answer" lang="en"><p>Resting metabolism uses the Mifflin-St Jeor formula, daily burn follows your activity level, and your chosen weekly pace adds a deficit or surplus. The target never goes below a safe floor. These are estimates, not medical advice.</p></div>
-        </details>
-        <details>
-          <summary><span lang="tr">Hatırlatıcılar gelmiyor.</span><span lang="en">Reminders aren't arriving.</span></summary>
-          <div class="answer" lang="tr"><p>Ayarlar › Bildirimler › Mesura'da bildirimlerin açık olduğunu, sonra uygulamada Profil › Bildirimler'de istediğin hatırlatıcıların seçili olduğunu kontrol et. Odak modları bildirimleri geciktirebilir.</p></div>
-          <div class="answer" lang="en"><p>Check that notifications are on in Settings › Notifications › Mesura, then that the reminders you want are selected in Profile › Notifications. Focus modes can hold notifications back.</p></div>
-        </details>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="foot">
-  <div class="wrap">
-    <a class="mark" href="./" aria-label="Mesura">mesura<i aria-hidden="true"></i></a>
+<footer class="colophon">
+  <div class="page">
     <nav aria-label="Yasal / Legal">
       <a href="privacy.html"><span lang="tr">Gizlilik politikası</span><span lang="en">Privacy policy</span></a>
       <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener"><span lang="tr">Kullanım koşulları (EULA)</span><span lang="en">Terms of use (EULA)</span></a>
-      <a href="#destek"><span lang="tr">Destek</span><span lang="en">Support</span></a>
+      <a href="mailto:yakup7313@icloud.com?subject=Mesura"><span lang="tr">İletişim</span><span lang="en">Contact</span></a>
     </nav>
-    <small>© <span data-year>2026</span> Lambdajans. <span lang="tr">Mesura tıbbi bir cihaz değildir.</span><span lang="en">Mesura is not a medical device.</span></small>
+    <p class="legal">© 2026 Lambdajans. <span lang="tr">Mesura tıbbi bir cihaz değildir ve tıbbi tavsiye vermez.</span><span lang="en">Mesura is not a medical device and gives no medical advice.</span></p>
   </div>
 </footer>
 
